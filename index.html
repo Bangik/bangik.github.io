@@ -1,159 +1,499 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="CUtSH58BqUlfwNggEZk7gMhyVsuj-Tq3g6eZp_9hrh4" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- my css -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <title>SIS ELENA</title>
-  </head>
-  <body>
-    <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-success">
-      <div class="container">
-        <a class="navbar-brand text-white" href="index.html">SIS ELENA</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- Google Api -->
+  <script src="https://apis.google.com/js/platform.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" href=".img/icon-web.svg">
+
+  <title>Achmad Dinofaldi Firmansyah</title>
+</head>
+<body>
+  <div id="loadingSpinner">
+    <div class="spinner-wrapper">
+      <div class="spinner-border text-secondary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container nav">
+      <a class="navbar-brand home-btn" href="#home">Achmad Dinofaldi</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link fa fa-dashboard text-white" href="#">Dasboard <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fa fa-mortar-board text-white" href="#">Akademik</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link fa fa-user-circle-o text-white dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Profile
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item fa fa-gear" href="#">Edit Profile</a>
-                <a class="dropdown-item fa fa-lock" href="#">Edit Password</a>
-                <a class="dropdown-item fa fa-sign-out" href="#">Log Out</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- navbar end -->
+      </button>
 
-    <!-- main start-->
-    <div class="container">
-      <div class="row row-cols-1 row-cols-md-4 text-center">
-        <div class="col mb-4">
-          <div class="card">
-            <a href="#" class="text-color-a">
-              <img src="./img/matematika-logo.jpg" class="card-img-top mx-auto d-block" alt="..." style="width:70%">
-              <div class="card-body">
-                <h5 class="card-title">Matematika</h5>
-              </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ml-4">
+            <a class="nav-link home-btn active" href="#home">Home</a>
+          </li>
+          <li class="nav-item ml-4">
+            <a class="nav-link about-btn" href="#about">About</a>
+          </li>
+          <li class="nav-item ml-4">
+            <a class="nav-link portfolio-btn" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item ml-4">
+            <a class="nav-link contact-btn" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="home">
+    <div class="banner fade-element-up">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-between">
+          <div class="col-sm-5 col-10">
+            <h1>Hai.. <br> Saya Achmad Dinofaldi Firmansyah</h1>
+            <p>Nama Panggilan Saya Aldi, <a href="https://www.linkedin.com/in/achmad-dinofaldi-firmansyah-3b4a69217" target="_blank">LinkedIn Saya</a></p>
+            <a href="#" class="btn btn-cta px-4">
+              <span class="mr-1">Donwload CV</span>
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-lines-fill" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7 1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm2 9a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+              </svg>
             </a>
           </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <a href="#" class="text-color-a">
-              <img src="./img/fisika-logo.jpeg" class="card-img-top mx-auto d-block" alt="..." style="width:70%">
-              <div class="card-body">
-                <h5 class="card-title">Fisika</h5>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <a href="#" class="text-color-a">
-              <img src="./img/kimia-logo.jpg" class="card-img-top mx-auto d-block" alt="..." style="width:70%">
-              <div class="card-body">
-                <h5 class="card-title">Kimia</h5>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <a href="#" class="text-color-a">
-              <img src="./img/biologi-logo.png" class="card-img-top mx-auto d-block" alt="..." style="width:70%">
-              <div class="card-body">
-                <h5 class="card-title">Biologi</h5>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <a href="#" class="text-color-a">
-              <img src="./img/bahasa-indonesia-logo.jpg" class="card-img-top mx-auto d-block" alt="..." style="width:70%">
-              <div class="card-body">
-                <h5 class="card-title">Bahasa Indonesia</h5>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <a href="#" class="text-color-a">
-              <img src="./img/pkn-logo.jpg" class="card-img-top mx-auto d-block" alt="..." style="width:70%">
-              <div class="card-body">
-                <h5 class="card-title">PKn</h5>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <a href="#" class="text-color-a">
-              <img src="./img/agama-logo.jpg" class="card-img-top mx-auto d-block" alt="..." style="width:70%">
-              <div class="card-body">
-                <h5 class="card-title">Agama</h5>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <a href="#" class="text-color-a">
-              <img src="./img/seni-budaya-logo.png" class="card-img-top mx-auto d-block" alt="..." style="width:70%">
-              <div class="card-body">
-                <h5 class="card-title">Seni Budaya</h5>
-              </div>
-            </a>
+          <div class="col-6 d-none d-sm-block">
+            <img class="img-fluid " src=".img/undraw_profile_6l1l.png" alt="hero-banner">
           </div>
         </div>
       </div>
     </div>
-    <!-- main end-->
-
-    <!-- footer start -->
-    <div class="row footer">
-      <div class="col text-center">
-        <p>	&copy; 2020 SMAN 1 AKABILURU</p>
+    <div class="container about-me">
+      <div class="about-info fade-element-up d-flex justify-content-center">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-sm-5 col-10 info-img">
+            <img src=".img/about-me.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-sm-6 col-12 info-description">
+            <h1>Tentang Saya</h1>
+            <p>Nama Saya Achmad Dinofaldi Firmansyah, saya kuliah di Politeknik Negeri Jember, jurusan Teknologi Informasi, program studi Teknik Informatika Internasional. Saya saat ini menempuh semester 5. Saya memiliki pengalaman di website desain dan development serta sedikit pengalaman di development aplikasi dekstop dan aplikasi mobile. Saya menguasai beberapa bahasa pemograman seperti Javascript, PHP, Java, Kotlin dan Python pada level dasar dan menengah.<br> Saya saat ini fokus pada pengembangan website menggunakan framework Bootstrap dan Laravel. Saya senang berbicara dengan anda tentang bidang saya. Jangan ragu untuk menghubungi saya, silahkan tulis email dan ide project anda</p>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- footer end -->
+    <div class="partner fade-element-up">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="partner-text text-muted">Kampus Saya:</p>
+          </div>
+          <div class="col-8 d-flex align-items-center justify-content-center m-auto">
+            <img class="img-fluid" src=".img/campus-logo.png" alt="img" width="500">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial fade-element-up">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-5 col-12 text-center">
+            <h3>Pencapaian Saya</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card card-testimonial text-center d-flex justify-content-center" data-toggle="modal" data-target="#modal-achieve-1" style="cursor: pointer;">
+              <p class="quote-text">"Juara 1 Epim Expo HMJ TI Kategori Website"</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card card-testimonial text-center d-flex justify-content-center" data-toggle="modal" data-target="#modal-achieve-2" style="cursor: pointer;">
+              <p class="quote-text">"Juara 1 TCP IT se Jawa Timur"</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card card-testimonial text-center d-flex justify-content-center" data-toggle="modal" data-target="#modal-achieve-3" style="cursor: pointer;">
+              <p class="quote-text">"Juara Harapan 1 Expo Produk IT JTI Polije"</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card card-testimonial text-center d-flex justify-content-center" data-toggle="modal" data-target="#modal-achieve-4" style="cursor: pointer;">
+              <p class="quote-text">"Finalis KMIPN Tahun 2021"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="check-portfolio container fade-element-up portfolio-me">
+      <div class="row">
+        <div class="col-sm-6 col-10 title">
+          <h1 class="m-0">Portofolio Saya</h1>
+          <small>Cek Portofolio saya yang luar biasa</small>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item">
+          <a type="button" class="link-a" data-toggle="modal" data-target="#modal-port-1">
+            <div class="portfolio-image">
+              <img src=".img/port-1.png" alt="img" class="img-fluid" />
+            </div>
+            <div class="description">
+              <h5><b>Sistem Informasi Layanan dan Jasa (Packclese)</b></h5>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item">
+          <a type="button" class="link-a" data-toggle="modal" data-target="#modal-port-2">
+            <div class="portfolio-image">
+              <img src=".img/port-2.png" alt="img" class="img-fluid" />
+            </div>
+            <div class="description">
+              <h5><b>Sistem Informasi Profile Organisasi (HMJ TI Polije)</b></h5>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item">
+          <a type="button" class="link-a" data-toggle="modal" data-target="#modal-port-3">
+              <div class="portfolio-image">
+                <img src=".img/port-3.png" alt="img" class="img-fluid" />
+              </div>
+              <div class="description">
+                <h5><b>Sistem Informasi Profile dan Manajemen Organisasi</b></h5>                
+              </div>
+            </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item">
+          <a type="button" class="link-a" data-toggle="modal" data-target="#modal-port-4">
+              <div class="portfolio-image">
+                <img src=".img/port-4.png" alt="img" class="img-fluid" />
+              </div>
+              <div class="description">
+                <h5><b>Sistem Informasi Expo Produk IT (EPIM)</b></h5>                
+              </div>
+            </a>
+        </div>
+      </div>
+    </div>
+    <div class="container contact-me">
+      <div class="row fade-element-up selling-word">
+        <div class="col-9">
+          <h3 class="title">Kontak Saya</h3>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center justify-content-center fade-element-up">
+        <div class="col-sm-6 col-12 contact-info mb-4" >
+          <form method="post" action="#">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Name</label>
+              <input type="text" class="form-control" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea required>
+            </div>
+            <button type="submit" class="btn btn-cta">Send</button>
+          </form>
+        </div>
+        <div class="col-sm-6 col-12 mb-4">
+          <div class="card mb-2 card-profile">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-3">
+                  <img src=".img/user.png" alt="img" class="rounded-circle img-thumnail">
+                </div>
+                <div class="col-sm-9">
+                  <h6>Achmad Dinofaldi Firmansyah</h6>
+                  <div class="g-ytsubscribe" data-channelid="UCYg8UWHcaXRxrpVks3VTgDA" data-layout="default" data-count="default"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2 card-profile">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-3">
+                  <img src=".img/user.png" alt="img" width="88" height="88" class="rounded-circle img-thumnail">
+                </div>
+                <div class="col-sm-9">
+                  <h6>Aldi Firmansyah</h6>
+                  <a href="https://www.instagram.com/aldi_frmnsyah/" class="btn btn-primary" target="_blank"><i class="fa fa-instagram"></i> Follow</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2 card-profile">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-3">
+                  <img src=".img/pawangcode.png" alt="img" width="88" height="88" class="rounded-circle img-thumnail">
+                </div>
+                <div class="col-sm-9">
+                  <h6>Admin Pawang Code</h6>
+                  <a href="https://www.instagram.com/pawangcode/" class="btn btn-primary"><i class="fa fa-instagram"></i> Follow</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="modal-achieve-1" aria-labelledby="modal-achieve-1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Juara 1 Epim Expo HMJ TI Kategori Website</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src=".img/achieve-1.jpg" alt="img" class="img-fluid" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <div class="modal fade" tabindex="-1" role="dialog" id="modal-achieve-2" aria-labelledby="modal-achieve-2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Juara 1 TCP IT se Jawa Timur</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src=".img/achieve-2.jpg" alt="img" class="img-fluid" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
-  </body>
+  <div class="modal fade" tabindex="-1" role="dialog" id="modal-achieve-3" aria-labelledby="modal-achieve-3" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Juara Harapan 1 Expo Produk IT JTI Polije</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src=".img/achieve-3.jpg" alt="img" class="img-fluid" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="modal-achieve-4" aria-labelledby="modal-achieve-4" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Finalis KMIPN 2021</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src=".img/achieve-4.jpg" alt="img" class="img-fluid" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="modal-port-1" aria-labelledby="modal-port-1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sistem Informasi Layanan dan Jasa (Packclese)</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><b>Deskripsi </b></p>
+          <p>Packclese adalah SI yang melayani 4 layanan yaitu laundry, bersih-bersih ruangan, titip barang dan paket barang. Aplikasi ini dibuat dengan Laravel untuk website dan Kotlin untuk Mobile App</p>
+          <p><b>Fitur Utama : </b></p>
+          <ol>
+            <li>Berbasis Website (Laravel) dan Android (Kotlin)</li>
+            <li>Manajemen User (Superadmin, Admin, dan User)</li>
+            <li>Melayani 4 jasa. Laundry, Titip Barang, Paketin Barang, Bersih Ruangan</li>
+            <li>Terintegrasi dengan Rajaongkir API</li>
+            <li>Transaksi dengan metode COD atau Midtrans Payment Gateway</li>
+            <li>Laporan Transaksi, Nota Pembayaran, dll</li>
+          </ol>
+          <p><b>Dikembangkan oleh :</b></p>
+          <ol>
+            <li>Achmad Dinofaldi Firmansyah (Front End & Backend) </li>
+            <li>Ridzky Oktaviari Pratama Putra (Front End & Backend)</li>
+          </ol>
+          <p><b>Link Portofolio Produk :</b></p>
+          <ol>
+            <li><a href="http://packclese.xyz" target="_blank">Website</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1nrR6lInu59_xoBl03bhCMaQG5SWMWeBF?usp=sharing" target="_blank">Mobile</a></li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="modal-port-2" aria-labelledby="modal-port-2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sistem Informasi Profile Organisasi (HMJ TI Polije)</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><b>Deskripsi </b></p>
+          <p>Sistem informasi ini merupakan website profile organisasi HMJ TI yang dibuat dengan Laravel dengan fitur manajemen kepengurusan organisasi.</p>
+          <p><b>Fitur Utama : </b></p>
+          <ol>
+            <li>Dikembangkan menggunakan Laravel Framework</li>
+            <li>Manajemen User (Admin dan User)</li>
+            <li>Posting Artikel</li>
+            <li>Profile Dinamis</li>
+            <li>Kirim Kritik dan Saran</li>
+          </ol>
+          <p><b>Dikembangkan oleh :</b></p>
+          <ol>              
+            <li>Iqbal Ikhlasul Amal (Front End) </li>
+            <li>Lukman A. (Front End & Backend)</li>
+            <li>A. Saifur (Front End & Backend)</li>
+            <li>Achmad Dinofaldi Firmansyah (Back End)</li>
+          </ol>
+          <p><b>Link Portofolio Produk :</b></p>
+          <ol>
+            <li><a href="https://hmjti-polije.com" target="_blank">Website</a></li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="modal-port-3" aria-labelledby="modal-port-3" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sistem Informasi Profile dan Manajemen Organisasi (Hega's Wana)</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><b>Deskripsi </b></p>
+          <p>Sistem informasi ini merupakan website profile organisasi HMJ TI yang dibuat dengan Laravel dengan fitur manajemen organisasi seperti pencatatan surat dan perlengkapan organisasi.</p>
+          <p><b>Fitur Utama : </b></p>
+          <ol>
+            <li>Dikembangkan menggunakan Laravel Framework</li>
+            <li>Manajemen User (Admin)</li>
+            <li>Posting Artikel</li>
+            <li>Profile Dinamis</li>
+            <li>Log aktivitas user</li>
+            <li>Manajemen surat keluar masuk</li>
+            <li>Manajemen pengecekan alat dengan barcode</li>
+            <li>Kirim Kritik dan Saran</li>
+            <li>Laporan Surat keluar masuk, perlengkapan, dll</li>
+          </ol>
+          <p><b>Dikembangkan oleh :</b></p>
+          <ol>              
+            <li>Achmad Dinofaldi Firmansyah (Front End & Back End)</li>
+          </ol>
+          <p><b>Link Portofolio Produk :</b></p>
+          <ol>
+            <li><a href="http://47.254.246.113:82" target="_blank">Website</a></li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="modal-port-4" aria-labelledby="modal-port-4" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sistem Informasi Expo Produk IT (EPIM)</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><b>Deskripsi</b></p>
+          <p>Expo produk IT atau EPIM adalah sistem informasi berbasis website bagian dari kegiatan perlombaan EPIM untuk memamerkan produk produk IT dari peserta lomba.</p>
+          <p><b>Fitur Utama : </b></p>
+          <ol>
+            <li>Dikembangkan menggunakan Laravel Framework</li>
+            <li>Manajemen User (Admin, Juri, User)</li>
+            <li>CRUD Produk IT</li>
+            <li>Like dan Unlike Produk</li>
+            <li>Filter Per Kategori Produk</li>
+            <li>Laporan pengunjung, user, produk, dll</li>
+          </ol>
+          <p><b>Dikembangkan oleh :</b></p>
+          <ol>
+            <li>Iqbal Ikhlasul Amal (Front End & Backend) </li>
+            <li>Lukman A. (Front End & Backend)</li>
+            <li>Achmad Dinofaldi Firmansyah (Back End)</li>
+          </ol>
+          <p><b>Link Portofolio Produk :</b></p>
+          <ol>
+            <li><a href="https://expo.epimjti.com" target="_blank">Website</a></li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center p-4">
+    <p class="m-0">Made by Bangik, &copy; Copyright 2021</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
 </html>
